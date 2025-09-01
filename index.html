@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Wedding</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background: #fdf6f0;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background: #d4a5a5;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    nav {
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #d4a5a5;
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      color: white;
+      background-image: url('https://i.pinimg.com/originals/1c/de/24/1cde244b835d6c109ec9f12ad264581d.jpg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.4); /* dark overlay for readability */
+      z-index: 0;
+    }
+
+    .hero h1,
+    .hero p {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+    }
+
+    footer {
+      background: #d4a5a5;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Emma & Liam</h1>
+    <p>We're getting married!</p>
+  </header>
+  
+  <nav>
+    <a href="#ourstory">Our Story</a>
+    <a href="#details">Details</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#rsvp">RSVP</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Save the Date</h1>
+    <p>October 10, 2025 – Tuscany, Italy</p>
+  </section>
+
+  <footer>
+    <p>With love, EMMA & LIAM
+</p>
+  </footer>
+</body>
+</html>
